@@ -1,0 +1,39 @@
+my:
+  db:
+    driver: Oracle
+    pwd: shibananda
+    url: jdbc-oracle
+    user: Shivayy
+---
+#spring:
+#  profile: qa
+spring:
+  config:
+    activate:
+      on-profile:
+        - qa
+        - uat
+
+my:
+  db:
+    driver: MySQL
+    pwd: shibananda
+    url: jdbc-MySQL
+    user: Shivayy
+---
+#spring:
+#  profile: prod
+spring:
+  config:
+    activate:
+      on-profile:
+        - prod
+        - production
+  
+my:
+  db:
+    driver: PostGres
+    pwd: shibananda
+    url: jdbc-PSG
+    user: Shivayy
+
